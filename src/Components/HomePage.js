@@ -14,7 +14,7 @@ const HomePage = () => {
   }
 
   useEffect(() => {
-    fetch('http://www.omdbapi.com/?apikey=d04c31ea&type=movie&t=lost')
+    fetch('https://www.omdbapi.com/?apikey=d04c31ea&type=movie&t=lost')
       .then(res => {
         if (!res.ok) {
           throw Error('some error message')
